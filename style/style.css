@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --hijau: #5BFF40;
+    --biru: #4D7EFF;
+    --putih: #e5e5e5;
+    --hitam: #121114;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--hitam);
+}
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+/*HEADER*/
+
+/*NAVBAR*/
+nav, #nav-bar-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}   
+#nav-bar-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+nav {
+    width: 100vw;
+    position: fixed;
+    height: 6.5rem;
+    z-index: 999;
+}
+nav, nav a {
+    color: var(--putih);
+}
+nav .kiri img {
+    height: 1.5rem;
+}
+nav .kanan ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav .kanan a {
+    color: var(--putih);
+    font-size: 1rem;
+    font-weight: 300;
+    transition: ease-in-out 0.25s;
+}
+nav .kanan a:hover {
+    color: var(--hijau);
+    transition: ease-in-out 0.25s;
+}
+a {
+    color: var(--putih);
+    font-size: 1rem;
+    font-weight: 300;
+    transition: ease-in-out 0.25s;
+}
+a:hover {
+    color: var(--hijau);
+    transition: ease-in-out 0.25s;
+}
+nav .kanan a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--hijau);
+    transform: scaleX(0);
+    transition: 0.15s linear;
+}
+nav .kanan a:hover::after {
+    transform: scaleX(0.6);
+}
+
+
+header .background {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../asset/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header .background::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--hitam) 30%, rgba(255, 255, 255, 0%) 300%);
+}
+.my-name {
+    color: var(--putih);
+    z-index: 1;
+    margin: 12rem 0rem 0rem 12rem;
+    width: 50rem;
+}
+.my-name h1 {
+    font-weight: 400;
+}
+.my-name h1 span{
+    font-weight: 700;
+}
+.my-name .text-typing span{
+    color: var(--hijau);
+    position: relative;
+    font-weight: 400;
+}
+.my-name .text-typing span::before {
+    content: "";
+    right: -0.75rem;
+    top: 50%;
+    position: absolute;
+    height: 3rem;
+    width: 0.15rem;
+    background: var(--putih);
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+.my-name .text-typing span.stop-blinking::before {
+    animation: none;
+}
+.name-type {
+    height: 13rem;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+.icon {
+    margin-top: 1rem;
+}
+.icon ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.icon img {
+    width: 2rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.icon img:hover {
+    width: 2.50rem;
+    transition: ease-in-out 0.25s;
+}
+
+.about-me {
+    margin-top: 10rem;
+    color: var(--putih);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-me-text {
+    max-width: 28rem;
+}
+.about-me-text h2{
+    margin-bottom: 1.5rem;
+}
+.about-me-text p {
+    text-align: justify;
+}
+
+/* INTRODUCTION */
+#introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+#introduction .information-content {
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+}
+
+/* PROGRAMMING ACCOUNT */
+.information-section {
+    padding: 3rem 2rem;
+    color: var(--putih);
+}
+.information-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: justify;
+    color: var(--putih);
+}
+.card-prog-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card-prog-account img {
+    height: 4rem;
+    transition: 0.25s ease-in-out;
+}
+.card-prog-account img:hover {
+    transform: scale(1.25);
+    transition: 0.25s ease-in-out;
+}
+.list-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* LATEST PROJECT */
+#latestProject ul{
+    list-style: none;
+}
+
+/*  FOOTER  */
+footer {
+    background: var(--hitam);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--putih);
+    padding: 3rem 0;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 15px;
+    }
+    header .background {
+        max-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../asset/Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .my-name {
+        color: var(--putih);
+        z-index: 1;
+        margin: 12rem 0rem 0rem 12rem;
+        width: 20rem;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 15px;
+    }
+    header .background {
+        max-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../asset/Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 10px;
+    }
+    header .background {
+        max-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../asset/Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .my-name {
+        margin: 20rem 0rem 0rem 8rem;
+        width: 60rem;
+    }
+    .my-name h1 {
+        font-size: 3rem;
+    }
+    .name-type {
+        height: 8rem;
+    }
+}
+@media (max-width: 430px) {
+    nav .kanan {
+        display: none;
+    }
+}
