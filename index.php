@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Fatecha</title>
 
-    <!--CSS-->
+    <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
 
+    <!-- ICON -->
+    <link rel="icon" href="asset/Fatecha-Icon.svg">
 </head>
 <body>
 <!--HEADER-->
@@ -151,6 +153,51 @@
             <li><a href="https://fatechapp.github.io/IDCamp-project-dasar-pemrograman-web/">Idcamp</a></li>
             <li><a href="https://fatechapp.github.io/Bakul-Pak-Eko/">Profile Website Bakul Pak Eko</a></li>
         </ul>
+    </div>
+</section>
+
+<!-- PROGRAMMING LANGUAGE -->
+<section id="programming-language" class="information-section">
+    <div class="programming-language-content information-content">
+        <h2>Programming Language</h2>
+        <div class="list-card-row">
+            <div class="card-prog-account">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="">                
+                </a>
+                <p>HTML</p>
+            </div>
+            <div class="card-prog-account">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="">                
+                </a>
+                <p>CSS</p>
+            </div>
+            <div class="card-prog-account">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="">                
+                </a>
+                <p>Javascript</p>
+            </div>
+            <div class="card-prog-account">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="">                
+                </a>
+                <p>Java</p>
+            </div>
+            <div class="card-prog-account">
+                <a href="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="">                
+                </a>
+                <p>PHP</p>
+            </div>
+            <div class="card-prog-account">
+                <a href="https://cx.apps.binus.ac.id/">
+                    <img src="https://cdn.worldvectorlogo.com/logos/go-6.svg" alt="">                
+                </a>
+                <p>Go</p>
+            </div>
+        </div>
     </div>
 </section>
 
