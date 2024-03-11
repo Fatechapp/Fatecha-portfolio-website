@@ -26,8 +26,8 @@
                 </div>
                 <div class="kanan">
                     <ul>
-                        <li><a href="#About-Me">About Me</a></li>
-                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#introduction">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
                         <li><a href="#Programming">Programming</a></li>
                         <li><a href="#Photography">Photography</a></li>
                         <li><a href="#Graphic Design">Graphic Design</a></li>
@@ -81,6 +81,35 @@
         <p>I am Fatecha Rizqi Putra Prasetyo, a student currently studying for an undergraduate degree at BINUS University majoring in Information Systems Accounting and Auditing. I like to learn new things and take on new challenges to develop myself. For my future career, I am interested to work and develop my career on the field of Frontend Developer, IT Auditor, or System Analyst.</p>
     </div>
 </section>
+
+<!-- EDUCATION -->
+<div class="information-section" id="education">
+    <div class="information-content" id="education-content">
+        <h2>Education</h2>
+        <div class="education-card">
+            <div class="figure">
+                <a href="https://utama.alazhar-bsd.sch.id/">
+                    <img src="asset/al-azhar-bsd-logo.png" alt="">
+                </a>
+            </div>
+            <div class="education-information">
+                <h2>High School</h2>
+                <p>Natural Science</p>
+            </div>
+        </div>
+        <div class="education-card">
+            <div class="figure">
+                <a href="https://binus.ac.id/">
+                    <img src="asset/universitas-bina-nusantara-logo.png" alt="">
+                </a>
+            </div>
+            <div class="education-information">
+                <h2>undergraduate</h2> 
+                <p>Information Systems Accounting and Auditing</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- PROGRAMMING ACCOUNT -->
 <section id="prog-account" class="information-section">
